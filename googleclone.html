@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Google Clone</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 100vw;
+      height: 100vh;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(bgbeach.jpg);
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .center {
+      width: 700px;
+      height: 400px;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 20px;
+
+
+    }
+
+    i {
+      color: black;
+      font-size: 25px;
+      margin: 0px 5px;
+
+    }
+
+    .input-grp {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      padding: 0px 10px;
+      background-color: white;
+      border-radius: 25px;
+      width: 100%;
+      height: 40px;
+    }
+
+    .text-field {
+      font-size: 20px;
+      outline: none;
+      border: none;
+      padding: 10px;
+      width: 550px;
+      height: 20px;
+    }
+
+    .fav-card {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      cursor: pointer;
+      border-radius: 5px;
+      color: white;
+    }
+
+    .fav-card:hover {
+      background-color: rgba(255, 255, 255, 0.193);
+      border-radius: 5px;
+
+      .dots {
+        opacity: 1;
+      }
+    }
+
+    .circle {
+      width: 60%;
+      height: 60%;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5px;
+
+    }
+
+    .fav-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    .dots {
+      font-size: 20px;
+      position: relative;
+      top: 5px;
+      left: 40px;
+      opacity: 0;
+      transition: 0.2s all ease;
+    }
+
+    .youtube {
+      width: 90%;
+      border-radius: 50%;
+    }
+
+    .chat {
+      width: 70%;
+      border-radius: 50%;
+
+    }
+
+    .link {
+      width: 90%;
+      border-radius: 50%;
+    }
+
+    .deep {
+      width: 90%;
+      border-radius: 50%;
+    }
+
+    .per {
+      width: 70%;
+      border-radius: 50%;
+    }
+
+    .git {
+      width: 120%;
+      border-radius: 50%;
+    }
+
+    .topright {
+      width: 200px;
+      height: 50px;
+      color: white;
+      background-color: transparent;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+    }
+    .line{
+      width: 0px;
+      color: white;
+    }
+    .topdots{
+      display: flex;
+    }
+    .human{
+      width: 30px;
+      height:30px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="center">
+      <img src="Googleimg.png" alt="" width="300px" height="auto" align="center" style="margin-bottom: 30px;">
+      <div class="input-grp">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <form action="https://www.google.com/search">
+          <input type="text" class="text-field" placeholder="Search Google or type a URL" name="q">
+        </form>
+        <i class="fa-solid fa-microphone"></i>
+        <i class="fa-solid fa-camera"></i>
+      </div>
+      <div class="fav-list">
+        <div class="fav-card">
+          <i class="fa-solid fa-ellipsis-vertical dots"></i>
+          <div class="circle">
+            <img src="linkedin.png" class="link" alt="">
+          </div>
+          <p>LinkedIn</p>
+        </div>
+        <div class="fav-card">
+          <i class="fa-solid fa-ellipsis-vertical dots"></i>
+          <div class="circle">
+            <img src="youtubelogo.png" class="youtube" alt="">
+          </div>
+          <p>Youtube</p>
+        </div>
+        <div class="fav-card">
+          <i class="fa-solid fa-ellipsis-vertical dots"></i>
+          <div class="circle">
+            <img src="chatgpt.png" class="chat" alt="">
+          </div>
+          <p>ChatGpt</p>
+        </div>
+        <div class="fav-card">
+          <i class="fa-solid fa-ellipsis-vertical dots"></i>
+          <div class="circle">
+            <img src="deepseek.png" class="deep" alt="">
+          </div>
+          <p>Deepseek</p>
+        </div>
+        <div class="fav-card">
+          <i class="fa-solid fa-ellipsis-vertical dots"></i>
+          <div class="circle">
+            <img src="perplexity.png" class="per" alt="">
+          </div>
+          <p>Perplexity</p>
+        </div>
+        <div class="fav-card">
+          <i class="fa-solid fa-ellipsis-vertical dots"></i>
+          <div class="circle">
+            <img src="github.png" class="git" alt="">
+          </div>
+          <p>Github</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="topright">
+    <p>Gmail</p>
+    <p>Images</p>
+    <div class="topdots">
+      <i class="fa-solid fa-ellipsis-vertical line"></i>
+      <i class="fa-solid fa-ellipsis-vertical line"></i>
+      <i class="fa-solid fa-ellipsis-vertical line"></i>
+    </div>
+    <img src="samplehuman.jpg" class="human">
+  </div>
+</body>
+
+</html>
